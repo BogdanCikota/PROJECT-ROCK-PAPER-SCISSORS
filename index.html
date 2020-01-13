@@ -24,15 +24,11 @@
       </div>
       <script>
         //layout, styles, bootstrap
-        // let container = document.querySelector('#container');
-        // container.classList.add('container');
         let buttons = document.querySelectorAll('button');
         buttons.forEach((btn) => {
                 btn.classList.add('rounded-circle');
         });
-        // let rock = document.querySelector('#rock');
-        // let paper = document.querySelector('#paper');
-        // let scissors = document.querySelector('#scissors');
+        
         
             
         //game
@@ -106,23 +102,6 @@
             document.querySelector('.rounds').textContent = 'Round: '+rounds;
                 
             if(playerScore > 4  || compScore > 4){
-            //    if(confirm('Computer: '+computerSelection+'\n'+ result+'\n' +'Player: '+ playerScore + ';\n' + 'Computer: '+ compScore + ';\n' + 'PLAY AGAIN?') === true){
-            //     playerScore = 0;
-            //     compScore = 0;
-            //     rounds = 0;
-            //     document.querySelector('.result').textContent = '';
-            //     document.querySelector('.score').textContent = '';
-            //     document.querySelector('.round').textContent = '';
-            //     document.querySelector('.computerSelection').textContent = '';
-            //    } else {
-            //     document.querySelector('.score').textContent = 'game over';
-            //     document.querySelector('.result').textContent = '';
-            //     document.querySelector('.round').textContent = '';
-            //     document.querySelector('.computerSelection').textContent = '';
-            //     buttons.forEach((btn) => {
-            //         btn.style.display = 'none';
-            //     });
-            // }
                 document.querySelector('.playerScore').textContent = playerScore;
                 document.querySelector('.compScore').textContent = compScore;
                 let restartBtn = document.createElement('button');
